@@ -185,6 +185,9 @@
       
       	gqty=$('#'+unit_ids).val();
       
+			if(gqty<=0){
+            return false;
+         }
       	if(link_offer==0){
       	//**** calculating basic price, no offers available
       	getvalues(id,gqty,unit_ids,0);
